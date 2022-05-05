@@ -73,6 +73,8 @@ const game = () => {
     console.log(`Final Score: Player1: ${player1.score}  Player2: ${player2.score}`);
     return player1.score > player2.score ?
         console.log("Player1 wins the game!") :
+        player1.score === player2.score ?
+        console.log("It's a draw!") :
         console.log("Player2 wins the game!");
 };
 //function call to run the game
