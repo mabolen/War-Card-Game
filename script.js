@@ -71,7 +71,7 @@ const game = () => {
     }
     //show final score and log the winning player
     console.log(`Final Score: Player1: ${player1.score}  Player2: ${player2.score}`);
-    player1.score > player2.score ?
+    return player1.score > player2.score ?
         console.log("Player1 wins the game!") :
         console.log("Player2 wins the game!");
 };
